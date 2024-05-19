@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forgot-password-container">
+        <form id="forgotPasswordForm">
+            <h5 class="forgot-password-title">Esqueceu a Senha?</h5>
+            <p class="forgot-password-instructions">Digite seu email para receber um link de redefinição de senha.</p>
+            <div class="forgot-password-input-with-icon">
+                <img class="forgot-password-icon" src="imagem/envelope.svg" alt="Envelope Icon">
+                <input class="forgot-password-input" id="email" type="email" name="email" placeholder="Digite seu E-mail" required>
+            </div>
+            <button type="button" onclick="solicitarSenha()" class="forgot-password-button">Enviar</button>
+        </form>
+    </div>
+    <script src="forgot-password.js"></script>
+</body>
+</html>

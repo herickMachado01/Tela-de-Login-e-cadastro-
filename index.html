@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="container">
+        <form id="loginForm">
+            <h5 class="tituloemail">Email</h5>
+            <div class="input-with-icon"> 
+                <img class="foto1" src="imagem/envelope.svg" alt="">
+                <input class="inputemail" id="email" type="email" name="email" placeholder="Entrar com E-mail" required>
+            </div>
+            <h5 class="titulosenha">Password</h5>
+            <div class="input-with-icon"> 
+                <img class="foto2" src="imagem/file-lock.svg" alt="">
+                <input class="inputsenha" id="password" type="password" name="senha" placeholder="Entrar com a senha" required>
+            </div>
+            <div>
+                <input class="inputbotao" type="checkbox" name="remember" id="remember">
+                <label class="lembrar" for="remember">Remember me</label>
+                <a href="esqueceusenha.html" class="linha"><p class="p2">Esqueceu a senha?</p></a> 
+            </div>
+            <button type="button" onclick="entrar()" class="botaoentrar">Entrar</button>
+            <div>
+                <div>
+                    <p class="p3">Não tem uma conta?</p>
+                    <a class="linha" href="cadastre.html"><p class="p4">Inscrever-se</p></a>
+                </div>
+                <p class="p5">Ou com</p>
+                <div class="inputcomfoto">
+                    <button class="botao1">
+                        <img class="foto3" src="imagem/icons8-google-logo.svg" alt=""> Google
+                    </button>
+                    <button class="botao2">
+                        <img class="foto4" src="imagem/github-mark.svg" alt=""> GitHub
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script> 
+</body>
+</html>
